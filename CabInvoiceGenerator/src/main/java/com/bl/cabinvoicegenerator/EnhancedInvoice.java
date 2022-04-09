@@ -12,6 +12,7 @@ public class EnhancedInvoice {
 		this.avgFare = this.totalFare / this.numOfRides;
 	}
 
+	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
@@ -21,4 +22,5 @@ public class EnhancedInvoice {
 		return (numOfRides == that.numOfRides) && Double.compare(that.totalFare, totalFare) == 0
 				&& Double.compare(that.avgFare, avgFare) == 0;
 	}
+
 }
